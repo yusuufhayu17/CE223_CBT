@@ -1,1130 +1,1137 @@
 const questions = [
+  // CE 222 Tutorial Questions 5
   {
-    question: "What is a fluid?",
-    options: [
-      "A compressible solid",
-      "A material that deforms continuously under shear stress and takes the shape of its container",
-      "A gas only",
-      "A solid with a fixed shape and volume"
-    ],
-    answer: 1
-  },
-  {
-    question: "Differentiate between liquids and gases.",
-    options: [
-      "Liquids and gases have the same compressibility",
-      "Liquids have definite volume; gases fill their container completely",
-      "Both liquids and gases have fixed volumes",
-      "Gases have definite volume; liquids fill their container"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define hydrostatics.",
-    options: [
-      "Study of gases in motion",
-      "Study of solids under pressure",
-      "Study of fluids at rest without shear stress",
-      "Study of fluid motion with friction"
-    ],
+    question: "The property by which a body returns to its original shape after removal of the force is called:",
+    options: ["Plasticity", "Ductility", "Elasticity", "Malleability", "Hardness"],
     answer: 2
   },
   {
-    question: "What is hydrodynamics?",
-    options: [
-      "Study of flow in open channels only",
-      "Study of fluid motion considering forces and energies",
-      "Study of fluids at rest",
-      "Study of solid body mechanics"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is an ideal fluid?",
-    options: [
-      "Compressible and viscous",
-      "Incompressible with high viscosity",
-      "Compressible and has surface tension",
-      "Incompressible, inviscid, and no surface tension"
-    ],
+    question: "The property of a material by which it can be beaten or rolled into thin plates is called:",
+    options: ["Elasticity", "Plasticity", "Ductility", "Malleability", "Hardness"],
     answer: 3
   },
   {
-    question: "Define density (ρ).",
-    options: [
-      "Volume per unit mass",
-      "Mass per unit volume (kg/m³)",
-      "Weight per unit volume",
-      "Force per unit mass"
-    ],
+    question: "Which law is also called as the elasticity law?",
+    options: ["Pascal's Law", "Hooke's Law", "Newton's Law", "Archimedes' Principle", "Boyle's Law"],
     answer: 1
   },
   {
-    question: "What is specific weight?",
+    question: "The materials which have the same elastic properties in all directions are called:",
+    options: ["Anisotropic materials", "Isotropic materials", "Orthotropic materials", "Homogeneous materials", "Composite materials"],
+    answer: 1
+  },
+  {
+    question: "A member which does not regain its original shape after removal of the load producing deformation is said to be:",
+    options: ["Elastic", "Plastic", "Brittle", "Ductile", "Malleable"],
+    answer: 1
+  },
+  {
+    question: "The body will regain its previous shape and size only when the deformation caused by the external forces, is within a certain limit. What is that limit?",
+    options: ["Proportional limit", "Elastic limit", "Yield point", "Ultimate stress", "Breaking point"],
+    answer: 1
+  },
+  {
+    question: "As the elastic limit reaches, tensile strain:",
+    options: ["Increases", "Decreases", "Increases more rapidly", "Decreases more rapidly", "Becomes zero"],
+    answer: 2
+  },
+  {
+    question: "What kind of elastic materials are derived from a strain energy density function?",
+    options: ["Linear elastic materials", "Non-linear elastic materials", "Hyperelastic materials", "Orthotropic materials", "Isotropic materials"],
+    answer: 2
+  },
+  {
+    question: "What is the number that measures an object's resistance to being deformed elastically when stress is applied to it?",
+    options: ["Poisson's ratio", "Modulus of elasticity", "Bulk modulus", "Shear modulus", "Rigidity modulus"],
+    answer: 1
+  },
+  {
+    question: "A cube subjected to three mutually perpendicular stress of equal intensity 'p' expenses a volumetric strain.",
     options: [
-      "Weight per unit volume (N/m³)",
-      "Volume per unit weight",
-      "Mass per unit volume",
-      "Force per unit area"
+      "p/E (1 - 2μ)",
+      "3p/E (1 - 2μ)",
+      "3p/E (1 + 2μ)",
+      "p/E (1 + 2μ)",
+      "p/E"
     ],
     answer: 0
   },
   {
-    question: "What is viscosity?",
+    question: "The strain energy stored in a solid circular shaft subjected to shear stress (τ) is: (Where, G= Modulus of rigidity for the shaft material)",
     options: [
-      "Resistance to flow due to internal friction between fluid layers",
-      "Force exerted by fluid on a surface",
-      "Speed of flow",
-      "Density of the fluid"
+      "τ² / 2G",
+      "τ² / 4G",
+      "τ² / G",
+      "τ² / 8G",
+      "(τ² / 2G) × Volume of the shaft"
+    ],
+    answer: 4
+  },
+  {
+    question: "The strain energy stored in a solid circular shaft in torsion, subjected to shear stress (τ), is: (Where, G= Modulus of rigidity for the shaft material)",
+    options: [
+      "(τ² / 2G) × Volume of the shaft",
+      "τ² / G",
+      "τ² / 2G",
+      "τ² / 4G",
+      "τ² / 8G"
     ],
     answer: 0
   },
   {
-    question: "State Newton’s law of viscosity.",
-    options: [
-      "Viscosity depends only on temperature",
-      "Shear stress (τ) equals dynamic viscosity times velocity gradient: τ = μ(du/dy)",
-      "Velocity is inversely proportional to shear stress",
-      "Shear stress is proportional to pressure"
-    ],
-    answer: 1
+    question: "The stress induced in a body, when suddenly loaded, is ______ the same load is applied gradually.",
+    options: ["Half of", "Equal to", "Twice", "Four times", "Three times"],
+    answer: 2
   },
   {
-    question: "Differentiate between dynamic and kinematic viscosity.",
-    options: [
-      "Kinematic viscosity is higher than dynamic viscosity",
-      "Dynamic viscosity (μ) is shear stress divided by velocity gradient; kinematic viscosity (ν) is μ divided by density (ρ)",
-      "They are the same",
-      "Dynamic viscosity is μ divided by density"
-    ],
-    answer: 1
+    question: "A material obeys Hooke's law up to:",
+    options: ["The elastic limit", "The ultimate stress point", "The proportional limit", "The yield point", "The breaking point"],
+    answer: 2
   },
   {
-    question: "How does temperature affect viscosity of liquids/gases?",
+    question: "The torque transmitted by a solid shaft of diameter (D) is: (where τ= Maximum allowable shear stress)",
     options: [
-      "Both liquids and gases viscosity increase with temperature",
-      "Liquids: viscosity decreases; Gases: viscosity increases with temperature",
-      "Liquids viscosity increases; gases viscosity decreases with temperature",
-      "Both liquids and gases viscosity decrease with temperature"
+      "π/16 × τ × D³",
+      "π/32 × τ × D³",
+      "π/64 × τ × D³",
+      "π/8 × τ × D³",
+      "π/16 × τ × D²"
     ],
-    answer: 1
+    answer: 0
   },
   {
-    question: "Define surface tension.",
+    question: "The torque transmitted by a hollow shaft of outer diameter (d₁) and inner diameter (d₂) is: (where, τ= Maximum allowable shear stress)",
     options: [
-      "Pressure difference between two points",
-      "Force per unit length acting at the interface of a liquid and gas (N/m)",
-      "Force per unit area inside a fluid",
-      "Mass per unit area"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is cohesion?",
-    options: [
-      "Attraction between liquid molecules and a solid surface",
-      "Repulsion between molecules of different liquids",
-      "Attraction between molecules of the same liquid",
-      "Force causing fluid flow"
+      "π/16 × τ × (d₁⁴ - d₂⁴) / d₁",
+      "π/32 × τ × (d₁⁴ - d₂⁴) / d₁",
+      "π/16 × τ × (d₁⁴ - d₂⁴) / d₂",
+      "π/32 × τ × (d₁⁴ - d₂⁴) / d₂",
+      "π/16 × τ × d₁³"
     ],
     answer: 2
   },
   {
-    question: "What is adhesion?",
+    question: "If Tₕ is the torque resisting capacity of a hollow shaft and Tₛ is that of a solid shaft, of the same material, length and weight. Then,",
     options: [
-      "Resistance to flow",
-      "Surface tension force in a liquid",
-      "Attraction between liquid molecules and a solid surface",
-      "Attraction between molecules of the same liquid"
+      "Tₕ < Tₛ",
+      "Tₕ = Tₛ",
+      "Tₕ > Tₛ",
+      "Tₕ = 2 Tₛ",
+      "Tₕ = 4 Tₛ"
     ],
     answer: 2
   },
   {
-    question: "Calculate pressure inside a water droplet of diameter ‘d’.",
+    question: "If Kₕ is the torque resisting capacity of a hollow shaft and Kₛ is that of a solid shaft, of the same material, length and weight. Then,",
     options: [
-      "p = 2σ/d",
-      "p = 4σ/d",
-      "p = 8σ/d",
-      "p = σd"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define pressure.",
-    options: [
-      "Mass per unit volume",
-      "Normal force per unit area (N/m² or Pa)",
-      "Weight per unit volume",
-      "Force per unit length"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is Pascal’s law?",
-    options: [
-      "Pressure increases with temperature",
-      "Pressure at a point in a static fluid is equal in all directions",
-      "Pressure decreases with depth",
-      "Pressure is the same in moving fluids"
-    ],
-    answer: 1
-  },
-  {
-    question: "Calculate pressure at depth ‘h’ in a liquid.",
-    options: [
-      "p = ρg/h",
-      "p = ρgh",
-      "p = γ/h",
-      "p = h/γ"
-    ],
-    answer: 1
-  },
-  {
-    question: "Differentiate between absolute and gauge pressure.",
-    options: [
-      "Absolute pressure equals gauge pressure",
-      "Absolute pressure = Gauge pressure + Atmospheric pressure",
-      "Absolute pressure = Gauge pressure - Atmospheric pressure",
-      "Gauge pressure is always higher than absolute pressure"
-    ],
-    answer: 1
-  },
-  {
-    question: "A diver is at 20m depth in seawater (γ = 10 kN/m³). Find gauge pressure.",
-    options: [
-      "200 kPa",
-      "2 kPa",
-      "20 kPa",
-      "0.2 kPa"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is a hydraulic press?",
-    options: [
-      "Machine that compresses solids",
-      "Pump that moves water uphill",
-      "Device that amplifies force via fluid pressure using Pascal’s law",
-      "Valve that controls fluid flow"
+      "Kₕ < Kₛ",
+      "Kₕ = Kₛ",
+      "Kₕ > Kₛ",
+      "Kₕ = 2 Kₛ",
+      "Kₕ = 4 Kₛ"
     ],
     answer: 2
   },
   {
-    question: "In a hydraulic press, if plunger diameter = 30mm and ram diameter = 200mm, find weight lifted for 400N input.",
+    question: "After reaching the yielding stage while testing a mild steel specimen, strain:",
     options: [
-      "4 kN",
-      "17.77 kN",
-      "400 N",
-      "200 N"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is buoyancy?",
-    options: [
-      "Upward force on a submerged object equal to weight of displaced fluid",
-      "Downward force due to gravity",
-      "Frictional force in fluids",
-      "Force causing fluid to flow"
-    ],
-    answer: 0
-  },
-  {
-    question: "State Archimedes’ principle.",
-    options: [
-      "Buoyant force equals weight of displaced fluid",
-      "Fluid velocity increases in constrictions",
-      "Force equals mass times acceleration",
-      "Pressure decreases with depth"
-    ],
-    answer: 0
-  },
-  {
-    question: "A stone weighs 400N in air and 225N in water. Find its volume.",
-    options: [
-      "0.0225 m³",
-      "0.0178 m³",
-      "0.0100 m³",
-      "0.0125 m³"
-    ],
-    answer: 1
-  },
-  {
-    question: "State Bernoulli’s equation.",
-    options: [
-      "F = ma",
-      "p/γ + V²/2g + z = constant",
-      "Q = AV",
-      "p = ρgh"
-    ],
-    answer: 1
-  },
-  {
-    question: "Assumptions of Bernoulli’s equation include:",
-    options: [
-      "Compressible flow, unsteady, viscous",
-      "Turbulent flow, compressible fluid",
-      "Flow with heat transfer",
-      "Ideal fluid, steady flow, incompressible, no friction, along streamline"
-    ],
-    answer: 3
-  },
-  {
-    question: "A pipe (90mm diameter) carries water at 2 m/s, pressure 350 kN/m², 8m above datum. Find total head.",
-    options: [
-      "25 m",
-      "43.88 m",
-      "50 m",
-      "35 m"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define total head.",
-    options: [
-      "Velocity of flow",
-      "Sum of pressure head, velocity head, and elevation head",
-      "Height of water only",
-      "Pressure at the pipe inlet"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is stagnation pressure?",
-    options: [
-      "Atmospheric pressure",
-      "Pressure due to fluid weight",
-      "Pressure when fluid is brought to rest isentropically (total pressure)",
-      "Pressure at the pipe outlet"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is dimensional homogeneity?",
-    options: [
-      "Pressure has no units",
-      "Dimensions of force only",
-      "All terms in an equation have identical dimensions",
-      "Length and time are same"
-    ],
-    answer: 2
-  },
-  {
-    question: "State Buckingham’s π-theorem.",
-    options: [
-      "It relates velocity and pressure",
-      "All variables must have dimensions",
-      "If ‘n’ variables involve ‘m’ fundamental dimensions, they form (n - m) dimensionless π-terms",
-      "No dimensionless terms exist"
-    ],
-    answer: 2
-  },
-  {
-    question: "List advantages of dimensional analysis.",
-    options: [
-      "Makes calculations difficult",
-      "Increases variables",
-      "Reduces variables, simplifies experiments, checks validity of equations",
-      "Complicates experimental setups"
-    ],
-    answer: 2
-  },
-  {
-    question: "Dimensions of dynamic viscosity (μ) are:",
-    options: [
-      "ML⁻¹T⁻¹",
-      "MLT⁻¹",
-      "L²T⁻¹",
-      "MT⁻²"
-    ],
-    answer: 0
-  },
-  {
-    question: "Dimensions of kinematic viscosity (ν) are:",
-    options: [
-      "MT⁻²",
-      "L²T⁻¹",
-      "M⁻¹L²T",
-      "ML⁻¹T⁻¹"
-    ],
-    answer: 1
-  },
-  {
-    question: "Resistance (F) of a sphere depends on D, V, ρ, μ. Express as π-terms.",
-    options: [
-      "F = ρVμ/D",
-      "F = ρD²V² f(μ/ρVD)",
-      "F = μD²V²",
-      "F = D²V/ρμ"
-    ],
-    answer: 1
-  },
-  {
-    question: "What are repeating variables?",
-    options: [
-      "Variables chosen to form dimensionless groups, e.g., length, velocity, density",
-      "Variables used repeatedly in calculations",
-      "Variables with no dimensions",
-      "Variables that vary with time"
-    ],
-    answer: 0
-  },
-  {
-    question: "Define Reynolds number (Re).",
-    options: [
-      "Ratio of inertial forces to viscous forces: Re = ρVD/μ",
-      "Ratio of pressure to velocity",
-      "Ratio of density to viscosity",
-      "Ratio of weight to volume"
-    ],
-    answer: 0
-  },
-  {
-    question: "Define Froude number (Fr).",
-    options: [
-      "Ratio of velocity to density",
-      "Ratio of inertial to gravitational forces: Fr = V/√(gL)",
-      "Ratio of pressure to velocity",
-      "Ratio of mass to volume"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define Mach number (M).",
-    options: [
-      "Ratio of flow speed to sound speed: M = V/C",
-      "Ratio of density to velocity",
-      "Ratio of velocity to pressure",
-      "Ratio of mass to weight"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is open channel flow?",
-    options: [
-      "Flow in closed pipes only",
-      "Flow with free surface exposed to atmosphere (e.g., rivers, canals)",
-      "Flow inside tanks only",
-      "Flow without gravity effects"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define Chezy’s formula.",
-    options: [
-      "V = C√(RS), where C = Chezy’s coefficient, R = hydraulic radius, S = slope",
-      "V = RS/C",
-      "V = C/R",
-      "V = S√(RC)"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is the most economical channel section?",
-    options: [
-      "Cross-section with minimum wetted perimeter for maximum discharge",
-      "Circular section",
-      "Rectangular with no slope",
-      "Section with maximum perimeter"
-    ],
-    answer: 0
-  },
-  {
-    question: "For a rectangular channel, optimal width-to-depth ratio is:",
-    options: [
-      "b = y",
-      "b = 2y (width is twice the depth)",
-      "b = 3y",
-      "b = 0.5y"
-    ],
-    answer: 1
-  },
-  {
-    question: "A trapezoidal channel (side slope 3:5) carries 1.2 m³/s. Find optimal dimensions if C = 70.",
-    options: [
-      "b ≈ 1.12 m, y ≈ 0.97 m",
-      "b ≈ 3 m, y ≈ 2 m",
-      "b ≈ 0.5 m, y ≈ 0.5 m",
-      "b ≈ 2 m, y ≈ 1 m"
-    ],
-    answer: 0
-  },
-  {
-    question: "Define Froude number in open channels.",
-    options: [
-      "Fr = V/√(gy); if Fr < 1: subcritical, Fr > 1: supercritical",
-      "Fr = g/Vy",
-      "Fr = V/gy",
-      "Fr = √(gy)/V"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is specific energy?",
-    options: [
-      "E = y + V²/2g (energy per unit weight relative to channel bed)",
-      "E = yV/g",
-      "E = y/g + V",
-      "E = V²/g"
-    ],
-    answer: 0
-  },
-  {
-    question: "Differentiate between GVF and RVF.",
-    options: [
-      "GVF: gradual depth change; RVF: sudden depth change (e.g., hydraulic jump)",
-      "GVF applies to gases only",
-      "GVF: sudden depth change; RVF: gradual depth change",
-      "Both are same"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is geometric similarity?",
-    options: [
-      "Prototype is smaller than model",
-      "Model and prototype have identical shapes but scaled sizes",
-      "Model and prototype have different shapes",
-      "Model is smaller, shape irrelevant"
-    ],
-    answer: 1
-  },
-  {
-    question: "Define dynamic similarity.",
-    options: [
-      "Forces in model and prototype are scaled proportionally",
-      "Only shape matters",
-      "Scale has no effect",
-      "Velocity is same in model and prototype"
-    ],
-    answer: 0
-  },
-  {
-    question: "A 1:20 scale model is tested with water. Prototype uses air. Find pressure drop if model Δp = 2 bar.",
-    options: [
-      "Pressure drops are equal",
-      "Pressure drop is unrelated to scale",
-      "Use scaling laws like Euler number to find prototype pressure drop",
-      "Prototype pressure drop is twice model’s"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is Weber number?",
-    options: [
-      "Ratio of viscous to inertial forces",
-      "Ratio of inertial to surface tension forces: We = ρV²L/σ",
-      "Ratio of pressure to velocity",
-      "Ratio of density to velocity"
-    ],
-    answer: 1
-  },
-  {
-    question: "Water flows at 3 m/s in a pipe. Downstream, velocity = 12 m/s, elevation drop = 8m. Find pressure change if p₁ = 260 kN/m².",
-    options: [
-      "Pressure increases by 100 kPa",
-      "Use Bernoulli’s equation to calculate p₂",
-      "Pressure change is zero",
-      "Pressure decreases by 50 kPa"
-    ],
-    answer: 1
-  },
-  {
-    question: "A pipe tapers from 1.2m to 0.6m diameter. Flow rate = 0.1 m³/s. Find pressure at lower end if p₁ = 73.575 kPa.",
-    options: [
-      "Pressure remains same",
-      "Pressure doubles",
-      "Use continuity and Bernoulli’s equations to find p₂",
-      "Pressure halves"
-    ],
-    answer: 2
-  },
-  {
-    question: "Calculate Reynolds number for oil (μ = 0.4 Ns/m², ρ = 900 kg/m³) in a 20mm pipe at 2.5 m/s.",
-    options: [
-      "9000",
-      "112.5",
-      "2000",
-      "400"
-    ],
-    answer: 1
-  },
-  {
-    question: "Find Mach number for aircraft at 900 ft/s (sound speed = 980 ft/s).",
-    options: [
-      "0.92",
-      "1.08",
-      "0.5",
-      "1.5"
-    ],
-    answer: 0
-  },
-  {
-    question: "Design a trapezoidal channel (Q = 6 m³/s, V = 1.5 m/s, side slope 1:1.5).",
-    options: [
-      "b = 0.6y, y ≈ 1.9m, b ≈ 1.14m",
-      "b = y, y = 1m",
-      "b = 2y, y = 0.5m",
-      "b = 3y, y = 2m"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is the effect of increasing temperature on fluid viscosity?",
-    options: [
-      "Viscosity increases for gases, decreases for liquids",
-      "Viscosity decreases for both",
-      "Viscosity increases for both",
-      "Viscosity decreases for gases, increases for liquids"
-    ],
-    answer: 0
-  },
-  {
-    question: "A body placed in fluid sinks if:",
-    options: [
-      "Weight < Upthrust",
-      "Weight > Upthrust",
-      "Weight = Upthrust",
-      "Weight is zero"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which of the following is NOT a property of fluids?",
-    options: [
-      "Flow",
-      "Fixed shape",
-      "Take shape of container",
-      "Continuous deformation under shear"
-    ],
-    answer: 1
-  },
-  {
-    question: "Hydrostatic pressure at a point in a fluid depends on:",
-    options: [
-      "Depth below free surface",
-      "Velocity of fluid",
-      "Shape of container",
-      "Temperature only"
-    ],
-    answer: 0
-  },
-  {
-    question: "A fluid is called compressible if:",
-    options: [
-      "Density changes significantly with pressure",
-      "Density remains constant",
-      "Viscosity changes",
-      "It flows"
-    ],
-    answer: 0
-  },
-  {
-    question: "Pascal’s law is applied in:",
-    options: [
-      "Hydraulic press",
-      "Water hammer",
-      "Bernoulli’s theorem",
-      "Viscosity measurement"
-    ],
-    answer: 0
-  },
-  {
-    question: "Flow in a pipe is turbulent if Reynolds number is:",
-    options: [
-      "Less than 2000",
-      "Between 2000 and 4000",
-      "More than 4000",
-      "Zero"
-    ],
-    answer: 2
-  },
-  {
-    question: "Surface tension is caused by:",
-    options: [
-      "Cohesive forces between liquid molecules",
-      "Adhesion with container",
-      "Gravity",
-      "Viscosity"
-    ],
-    answer: 0
-  },
-  {
-    question: "In Bernoulli’s equation, the velocity head term is:",
-    options: [
-      "p/γ",
-      "V²/2g",
-      "z",
-      "Q/A"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which of the following best describes laminar flow?",
-    options: [
-      "Chaotic flow",
-      "Streamlined flow with layers",
-      "High turbulence",
-      "Irregular flow"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which dimensionless number predicts flow regime in pipes?",
-    options: [
-      "Froude number",
-      "Reynolds number",
-      "Mach number",
-      "Weber number"
-    ],
-    answer: 1
-  },
-  {
-    question: "The hydraulic radius R is defined as:",
-    options: [
-      "Area / Wetted perimeter",
-      "Perimeter / Area",
-      "Diameter / 4",
-      "Velocity / Depth"
-    ],
-    answer: 0
-  },
-  {
-    question: "The shape of a liquid surface in a capillary tube is due to:",
-    options: [
-      "Viscosity",
-      "Surface tension and adhesion",
-      "Density",
-      "Temperature"
-    ],
-    answer: 1
-  },
-  {
-    question: "What causes hydraulic jump?",
-    options: [
-      "Sudden change from supercritical to subcritical flow",
-      "Slow flow",
-      "Change in temperature",
-      "Viscosity change"
-    ],
-    answer: 0
-  },
-  {
-    question: "In open channel flow, flow is critical when:",
-    options: [
-      "Froude number = 1",
-      "Reynolds number = 1",
-      "Mach number = 1",
-      "Weber number = 1"
-    ],
-    answer: 0
-  },
-  {
-    question: "The discharge Q is related to velocity V and area A by:",
-    options: [
-      "Q = A/V",
-      "Q = AV",
-      "Q = A+V",
-      "Q = V/A"
-    ],
-    answer: 1
-  },
-  {
-    question: "The force causing fluid to resist relative motion between layers is called:",
-    options: [
-      "Pressure",
-      "Viscosity",
-      "Gravity",
-      "Buoyancy"
-    ],
-    answer: 1
-  },
-  {
-    question: "The SI unit of pressure is:",
-    options: [
-      "Pascal (Pa)",
-      "Newton (N)",
-      "Joule (J)",
-      "Watt (W)"
-    ],
-    answer: 0
-  },
-  {
-    question: "Which of the following fluids has zero viscosity?",
-    options: [
-      "Water",
-      "Air",
-      "Ideal fluid",
-      "Honey"
-    ],
-    answer: 2
-  },
-  {
-    question: "The velocity of fluid at the free surface in an open channel is generally:",
-    options: [
-      "Maximum",
-      "Minimum",
-      "Zero",
-      "Equal to average velocity"
-    ],
-    answer: 0
-  },
-  {
-    question: "Which law relates shear stress and velocity gradient in fluids?",
-    options: [
-      "Pascal’s law",
-      "Newton’s law of viscosity",
-      "Archimedes principle",
-      "Bernoulli’s theorem"
-    ],
-    answer: 1
-  },
-  {
-    question: "What is the effect of roughness on pipe flow?",
-    options: [
-      "Increases turbulence and friction losses",
-      "Decreases flow velocity",
-      "Has no effect",
-      "Increases viscosity"
-    ],
-    answer: 0
-  },
-  {
-    question: "What is the effect of temperature on density of liquids?",
-    options: [
-      "Density increases with temperature",
-      "Density decreases with temperature",
-      "Density remains constant",
-      "Density doubles with temperature"
-    ],
-    answer: 1
-  },
-  {
-    question: "An example of compressible fluid is:",
-    options: [
-      "Water",
-      "Air",
-      "Oil",
-      "Honey"
-    ],
-    answer: 1
-  },
-  {
-    question: "The energy line in fluid flow represents:",
-    options: [
-      "Total energy head of the fluid",
-      "Pressure head only",
-      "Velocity head only",
-      "Elevation head only"
-    ],
-    answer: 0
-  },
-  {
-    question: "If velocity in a pipe increases, pressure:",
-    options: [
-      "Increases",
+      "Increases slowly",
+      "Increases rapidly",
       "Decreases",
       "Remains constant",
-      "Depends on temperature"
+      "Becomes zero"
     ],
     answer: 1
   },
   {
-    question: "The principle used in hydraulic lifts is:",
+    question: "Principal planes are planes having:",
     options: [
-      "Bernoulli’s theorem",
-      "Pascal’s law",
-      "Archimedes principle",
-      "Newton’s law"
+      "Only normal stress",
+      "Only shear stress",
+      "No normal stress",
+      "No shear stress",
+      "Both normal and shear stress"
     ],
-    answer: 1
+    answer: 3
   },
   {
-    question: "Which is the main cause of fluid flow?",
+    question: "If the slenderness ratio for a column is 1....",
     options: [
-      "Pressure difference",
-      "Gravity only",
-      "Temperature difference",
-      "Surface tension"
-    ],
-    answer: 0
-  },
-  {
-    question: "The major losses in pipe flow are due to:",
-    options: [
-      "Friction and turbulence",
-      "Temperature change",
-      "Pressure increase",
-      "Surface tension"
+      "It is a short column",
+      "It is a long column",
+      "It is a medium column",
+      "It is not a column",
+      "It is an unstable column"
     ],
     answer: 0
   },
+
+  // CE 222 Tutorial Questions 6
   {
-    question: "Which of the following is NOT a cause of conflict?",
+    question: "Slope in the beam at any point is measured in:",
+    options: ["Radians", "Meters", "Degrees", "Centimeters", "Newtons"],
+    answer: 0
+  },
+  {
+    question: "Elastic curve is also known as:",
     options: [
-      "Identity",
-      "Economic conditions",
-      "Tolerance"
+      "Bending moment diagram",
+      "Shear force diagram",
+      "Deflection curve",
+      "Deflected curve",
+      "Stress-strain curve"
     ],
     answer: 2
+  },
+  {
+    question: "Which of the following method is not used for determining slope and deflection at a point?",
+    options: [
+      "Double integration method",
+      "Moment area method",
+      "Conjugate beam method",
+      "Force method",
+      "Strain energy method"
+    ],
+    answer: 3
+  },
+  {
+    question: "The slope is denoted by:",
+    options: ["δ", "θ", "ε", "σ", "τ"],
+    answer: 1
+  },
+  {
+    question: "In cantilever beams the slope is:",
+    options: [
+      "Maximum at the free end",
+      "Zero at the free end",
+      "Maximum at the fixed end",
+      "Zero at the fixed end",
+      "Uniform throughout the beam"
+    ],
+    answer: 0
+  },
+  {
+    question: "Slope is maximum at supported beams.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Mohr's theorem- 1 states:",
+    options: [
+      "The change in slope between any two points on the elastic curve is equal to the area of the bending moment diagram between those two points divided by EI.",
+      "The deflection at any point is equal to the moment of the area of the bending moment diagram between that point and a point of zero slope, about the point of zero slope.",
+      "The deflection at any point is equal to the moment of the area of the bending moment diagram between that point and the support, about that point, divided by EI.",
+      "The deflection at any point is equal to the area of the bending moment diagram between that point and a point of zero slope, divided by EI.",
+      "The slope at any point is zero."
+    ],
+    answer: 0
+  },
+  {
+    question: "Using Mohr's theorem, calculate the maximum slope of a cantilever beam if the bending moment area diagram is 90 kNm². Take EI = 4000 kNm².",
+    options: [
+      "0.0225 radians",
+      "0.045 radians",
+      "0.00225 radians",
+      "0.0045 radians",
+      "0.225 radians"
+    ],
+    answer: 1
+  },
+  {
+    question: "Contour canals are also called as:",
+    options: [
+      "Side slope canals",
+      "Watershed canals",
+      "Ridge canals",
+      "Side canals",
+      "All of the above"
+    ],
+    answer: 4
+  },
+  {
+    question: "A generally higher side is left without bank. So it is also called a single bank canal.",
+    options: ["True", "False"],
+    answer: 0
+  },
+
+  // CE 222 Tutorial Questions 3
+  {
+    question: "____ of a beam is a measure of its resistance against deflection.",
+    options: ["Shear force", "Bending moment", "Flexural rigidity", "Torsional rigidity", "Section modulus"],
+    answer: 2
+  },
+  {
+    question: "The maximum induced stresses should be within the safe permissible stresses to ensure ______ of the beam.",
+    options: ["Deflection", "Strength", "Stiffness", "Durability", "Stability"],
+    answer: 1
+  },
+  {
+    question: "Elastic line is also called as:",
+    options: [
+      "Shear force diagram",
+      "Bending moment diagram",
+      "Deflection curve",
+      "Elastic curve",
+      "Neutral axis"
+    ],
+    answer: 3
+  },
+  {
+    question: "In simply supported beams, the slope is ______ at supports.",
+    options: ["Zero", "Maximum", "Minimum", "Uniform", "Variable"],
+    answer: 0
+  },
+  {
+    question: "In simply supported beam deflection is maximum at:",
+    options: [
+      "The supports",
+      "The point of maximum shear force",
+      "The center",
+      "The point of maximum bending moment",
+      "The point of zero bending moment"
+    ],
+    answer: 2
+  },
+  {
+    question: "Calculate the maximum deflection of a simply supported beam if the maximum slope at A is 0.0075 radians and the distance of centre of gravity of bending moment diagram to support A is 1.33 metres.",
+    options: [
+      "0.005 m",
+      "0.009975 m",
+      "0.01995 m",
+      "0.0025 m",
+      "0.0075 m"
+    ],
+    answer: 1
+  },
+  {
+    question: "____ is the best example for accelerator (admixture).",
+    options: ["Calcium chloride", "Gypsum", "Fly ash", "Silica fume", "Water reducer"],
+    answer: 0
+  },
+  {
+    question: "____ is used to reduce the time for hardening of concrete.",
+    options: [
+      "Retarder",
+      "Plasticizer",
+      "Air-entraining agent",
+      "Accelerator",
+      "Superplasticizer"
+    ],
+    answer: 3
+  },
+  {
+    question: "The full form of LEED is:",
+    options: [
+      "Leadership in Energy and Environmental Design",
+      "Leading in Engineering and Economic Development",
+      "Leadership in Environmental and Economic Development",
+      "Leading in Energy and Environmental Design",
+      "Leading Engineering and Environmental Design"
+    ],
+    answer: 0
+  },
+  {
+    question: "____ has a lower heat of hydration.",
+    options: [
+      "Ordinary Portland Cement",
+      "Rapid Hardening Cement",
+      "Low Heat Cement",
+      "High Alumina Cement",
+      "Portland Pozzolana Cement"
+    ],
+    answer: 2
+  },
+  {
+    question: "The factors that influence rate of hydration is:",
+    options: [
+      "Fineness of cement",
+      "Water-cement ratio",
+      "Temperature",
+      "Chemical composition of cement",
+      "All of the above"
+    ],
+    answer: 4
+  },
+  {
+    question: "The steel suits best to reinforcement with concrete is:",
+    options: [
+      "Mild steel",
+      "High tensile steel",
+      "Carbon steel",
+      "Stainless steel",
+      "None of the above"
+    ],
+    answer: 0
+  },
+  {
+    question: "Meander ratio is the ratio of meander belt to:",
+    options: [
+      "Meander length",
+      "Meander width",
+      "Channel width",
+      "Wavelength",
+      "Amplitude"
+    ],
+    answer: 3
+  },
+
+  // CE 222 Tutorial Questions 4
+  {
+    question: "According to Lami's theorem.",
+    options: [
+      "If three forces acting at a point are in equilibrium, each force is proportional to the sine of the angle between the other two.",
+      "If three forces acting at a point are in equilibrium, the sum of their horizontal components is zero.",
+      "If three forces acting at a point are in equilibrium, the sum of their vertical components is zero.",
+      "If three forces acting at a point are in equilibrium, the sum of their moments is zero.",
+      "None of the above."
+    ],
+    answer: 0
+  },
+  {
+    question: "A number of forces acting at a point will be in equilibrium if:",
+    options: [
+      "Their resultant is zero.",
+      "They are all equal in magnitude.",
+      "They are all concurrent.",
+      "They are all parallel.",
+      "They are all perpendicular."
+    ],
+    answer: 0
+  },
+  {
+    question: "The center of gravity of a triangle lies at the point of:",
+    options: [
+      "Intersection of its altitudes",
+      "Intersection of its medians",
+      "Intersection of its angle bisectors",
+      "Intersection of its perpendicular bisectors",
+      "All of the above"
+    ],
+    answer: 1
+  },
+  {
+    question: "Angle of friction is the:",
+    options: [
+      "Angle between the normal reaction and the resultant of the normal reaction and the limiting friction.",
+      "Angle between the normal reaction and the applied force.",
+      "Angle between the applied force and the resultant of the normal reaction and the limiting friction.",
+      "Angle between the limiting friction and the normal reaction.",
+      "None of the above."
+    ],
+    answer: 0
+  },
+  {
+    question: "Limiting force of friction is the:",
+    options: [
+      "Maximum force of friction that can be developed.",
+      "Minimum force of friction that can be developed.",
+      "Force of friction when the body is in motion.",
+      "Force of friction when the body is at rest.",
+      "Frictional force when the body is about to move."
+    ],
+    answer: 4
+  },
+  {
+    question: "The necessary condition for forces to be in equilibrium is that these should be:",
+    options: [
+      "Concurrent",
+      "Coplanar",
+      "Parallel",
+      "Both concurrent and coplanar",
+      "Collinear"
+    ],
+    answer: 3
+  },
+  {
+    question: "Which of the following is the example of lever of first order?",
+    options: [
+      "Nutcracker",
+      "Sugar tongs",
+      "Beam balance",
+      "Wheelbarrow",
+      "All of the above"
+    ],
+    answer: 2
+  },
+  {
+    question: "A cable with a uniformly distributed load per horizontal metre run will take the following shape.",
+    options: [
+      "Parabola",
+      "Catenary",
+      "Hyperbola",
+      "Circle",
+      "Straight line"
+    ],
+    answer: 0
+  },
+  {
+    question: "In determining stresses in frames by methods of sections, the frame is divided into two parts by an imaginary section drawn in such a way as not to cut more than:",
+    options: [
+      "One member",
+      "Two members",
+      "Three members",
+      "Four members",
+      "Five members"
+    ],
+    answer: 2
+  },
+  {
+    question: "According to principle of transmissibility of forces, the effect of a force upon a body is:",
+    options: [
+      "Dependent on its point of application.",
+      "Independent of its point of application.",
+      "The same at any point along its line of action.",
+      "The same at any point on the body.",
+      "None of the above."
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following do not have identical dimensions?",
+    options: [
+      "Moment of inertia and product of inertia",
+      "Moment of a force and work",
+      "Stress and pressure",
+      "Force and weight",
+      "Power and energy"
+    ],
+    answer: 1
+  },
+  {
+    question: "If a number of forces act simultaneously on a particle, it is possible:",
+    options: [
+      "To replace them by a single force.",
+      "To replace them by a single force and a couple.",
+      "To replace them by a couple only.",
+      "To replace them by a moment only.",
+      "None of the above."
+    ],
+    answer: 0
+  },
+
+  // Additional generic engineering questions to reach 150+
+  {
+    question: "What is the SI unit of stress?",
+    options: ["Newton", "Pascal", "Joule", "Watt", "Newton-meter"],
+    answer: 1
+  },
+  {
+    question: "Modulus of rigidity is also known as:",
+    options: ["Young's modulus", "Shear modulus", "Bulk modulus", "Poisson's ratio", "Elastic modulus"],
+    answer: 1
+  },
+  {
+    question: "The ratio of lateral strain to longitudinal strain is called:",
+    options: ["Bulk modulus", "Shear modulus", "Poisson's ratio", "Young's modulus", "Modulus of elasticity"],
+    answer: 2
+  },
+  {
+    question: "The maximum bending moment in a simply supported beam carrying a uniformly distributed load w per unit length and span L is:",
+    options: ["wL²/8", "wL/2", "wL²/12", "wL²/6", "wL"],
+    answer: 0
+  },
+  {
+    question: "Buckling occurs in columns due to:",
+    options: ["Shear stress", "Compressive stress", "Tensile stress", "Bending stress", "Torsion"],
+    answer: 1
+  },
+  {
+    question: "The neutral axis of a beam cross section is:",
+    options: [
+      "Where the bending stress is maximum",
+      "Where the bending stress is zero",
+      "Where the shear stress is maximum",
+      "Where the beam breaks",
+      "Where the bending moment is zero"
+    ],
+    answer: 1
+  },
+  {
+    question: "A simply supported beam of length L carries a point load P at its midspan. The maximum bending moment is:",
+    options: ["PL/4", "PL/2", "PL/8", "PL", "2PL"],
+    answer: 0
+  },
+  {
+    question: "The deflection at the free end of a cantilever beam of length L under an end load P is:",
+    options: ["PL³ / 3EI", "PL³ / 2EI", "PL² / 3EI", "PL / 3EI", "PL³ / 6EI"],
+    answer: 0
+  },
+  {
+    question: "What is the primary purpose of a strain gauge?",
+    options: [
+      "To measure displacement",
+      "To measure stress",
+      "To measure strain",
+      "To measure temperature",
+      "To measure force"
+    ],
+    answer: 2
+  },
+  {
+    question: "The factor of safety is defined as:",
+    options: [
+      "Ultimate load / Working load",
+      "Working load / Ultimate load",
+      "Yield load / Ultimate load",
+      "Yield load / Working load",
+      "Ultimate load / Yield load"
+    ],
+    answer: 0
+  },
+  {
+    question: "The maximum shear stress theory is also known as:",
+    options: [
+      "Tresca theory",
+      "Von Mises theory",
+      "Maximum distortion energy theory",
+      "Rankine theory",
+      "Saint-Venant theory"
+    ],
+    answer: 0
+  },
+  {
+    question: "Young's modulus is the ratio of:",
+    options: [
+      "Stress / Strain",
+      "Strain / Stress",
+      "Shear stress / Shear strain",
+      "Bulk stress / Bulk strain",
+      "None of the above"
+    ],
+    answer: 0
+  },
+  {
+    question: "Bulk modulus is the ratio of:",
+    options: [
+      "Volumetric stress / Volumetric strain",
+      "Shear stress / Shear strain",
+      "Tensile stress / Tensile strain",
+      "Bending stress / Bending strain",
+      "None of the above"
+    ],
+    answer: 0
+  },
+  {
+    question: "Poisson’s ratio for most materials lies between:",
+    options: [
+      "0 and 0.5",
+      "0.5 and 1",
+      "-1 and 0",
+      "-0.5 and 0",
+      "1 and 2"
+    ],
+    answer: 0
+  },
+  {
+    question: "The moment of inertia of a rectangle about its centroidal axis is:",
+    options: [
+      "bh³/12",
+      "bh³/3",
+      "bh²/12",
+      "bh³/6",
+      "bh²/6"
+    ],
+    answer: 0
+  },
+  {
+    question: "In a cantilever beam with a point load at the free end, the maximum bending moment occurs at:",
+    options: [
+      "The free end",
+      "The fixed end",
+      "At mid-span",
+      "Quarter span",
+      "Three-quarter span"
+    ],
+    answer: 1
+  },
+  {
+    question: "The maximum shear force in a simply supported beam subjected to a uniformly distributed load w over a span L is:",
+    options: [
+      "wL/2",
+      "wL/4",
+      "wL",
+      "wL/8",
+      "0"
+    ],
+    answer: 0
+  },
+  {
+    question: "The maximum deflection of a simply supported beam carrying a uniform load w over the entire span L is:",
+    options: [
+      "5wL⁴ / 384EI",
+      "wL⁴ / 8EI",
+      "wL³ / 48EI",
+      "wL² / 8EI",
+      "3wL⁴ / 384EI"
+    ],
+    answer: 0
+  },
+  {
+    question: "The shear force diagram for a simply supported beam under uniformly distributed load is:",
+
+  },
+  {
+    question: "The bending moment diagram for a simply supported beam under uniformly distributed load is:",
+    options: [
+      "Parabolic",
+      "Triangular",
+      "Rectangular",
+      "Circular",
+      "Elliptical"
+    ],
+    answer: 0
+  },
+  {
+    question: "Strain energy stored in a body due to sudden loading is:",
+    options: [
+      "Double that due to gradual loading",
+      "Same as gradual loading",
+      "Half of gradual loading",
+      "Triple of gradual loading",
+      "None of the above"
+    ],
+    answer: 0
+  },
+  {
+    question: "The unit of modulus of elasticity is:",
+    options: [
+      "N/m²",
+      "Nm",
+      "N",
+      "Pa",
+      "Both N/m² and Pa"
+    ],
+    answer: 4
   }
 ];
 
-// UI Elements
-const questionNav = document.getElementById('question-nav');
-const startScreen = document.getElementById('start-screen');
-const startQuizBtn = document.getElementById('start-quiz-btn');
-const quizContainer = document.getElementById('quiz-container');
-const resultContainer = document.getElementById('result-container');
-const app = document.getElementById('app');
-const timerEl = document.getElementById('timer');
-const questionNumberEl = document.getElementById('question-number');
-const questionTextEl = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const submitBtn = document.getElementById('submit-btn');
-const scoreEl = document.getElementById('score');
-const resultsList = document.getElementById('results-list');
-const retryBtn = document.getElementById('retry-btn');
-const customConfirm = document.getElementById('customConfirm');
-const confirmYes = document.getElementById('confirmYes');
-const confirmNo = document.getElementById('confirmNo');
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-
-// Quiz variables
-const TOTAL_QUESTIONS = 45;
-const TIME_LIMIT = 45 * 60; // in seconds
-let selectedQuestions = [];
-let currentQuestionIndex = 0;
-let userAnswers = [];
-let timer;
-let timeRemaining = TIME_LIMIT;
-
-// Initialize quiz
-startQuizBtn.addEventListener('click', () => {
-  startScreen.style.display = 'none';
-  app.style.display = 'flex';
-  initQuiz();
-});
-
-function initQuiz() {
-  // Shuffle and pick questions
-  const shuffled = shuffleArray([...questions]);
-  selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
-
-  currentQuestionIndex = 0;
-  userAnswers = new Array(selectedQuestions.length).fill(null);
-
-  timeRemaining = TIME_LIMIT;
-  updateTimerDisplay();
-
-  showQuestion();
-
-  prevBtn.disabled = true;
-  nextBtn.disabled = false;
-  submitBtn.disabled = true;
-
-  quizContainer.style.display = 'flex';
-  resultContainer.style.display = 'none';
-
-  startTimer();
-}
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-function startTimer() {
-  clearInterval(timer);
-  timer = setInterval(() => {
-    timeRemaining--;
-    updateTimerDisplay();
-    if (timeRemaining <= 0) {
-      clearInterval(timer);
-      finishQuiz();
+    // KaTeX rendering function
+    function renderLatex(str) {
+      if (!str) return str;
+      
+      // Render LaTeX between $...$
+      return str.replace(/\$(.*?)\$/g, (match, latex) => {
+        try {
+          return katex.renderToString(latex, {
+            throwOnError: false,
+            displayMode: false
+          });
+        } catch (e) {
+          console.error("KaTeX error:", e);
+          return match;
+        }
+      });
     }
-  }, 1000);
-}
 
-function updateTimerDisplay() {
-  let min = Math.floor(timeRemaining / 60);
-  let sec = timeRemaining % 60;
-  timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
-}
 
-function renderQuestionNav() {
-  questionNav.innerHTML = '';
-  selectedQuestions.forEach((_, i) => {
-    const btn = document.createElement('button');
-    btn.textContent = i + 1;
-    if (userAnswers[i] !== null) btn.classList.add('answered');
-    if (i === currentQuestionIndex) btn.classList.add('current');
-    btn.addEventListener('click', () => {
-      currentQuestionIndex = i;
+    // UI Elements
+    const questionNav = document.getElementById('question-nav');
+    const startScreen = document.getElementById('start-screen');
+    const startQuizBtn = document.getElementById('start-quiz-btn');
+    const quizContainer = document.getElementById('quiz-container');
+    const resultContainer = document.getElementById('result-container');
+    const app = document.getElementById('app');
+    const timerEl = document.getElementById('timer');
+    const questionNumberEl = document.getElementById('question-number');
+    const questionTextEl = document.getElementById('question-text');
+    const optionsContainer = document.getElementById('options-container');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const submitBtn = document.getElementById('submit-btn');
+    const scoreEl = document.getElementById('score');
+    const resultsList = document.getElementById('results-list');
+    const retryBtn = document.getElementById('retry-btn');
+    const customConfirm = document.getElementById('customConfirm');
+    const confirmYes = document.getElementById('confirmYes');
+    const confirmNo = document.getElementById('confirmNo');
+    const reloadConfirm = document.getElementById('reload-confirm');
+    const reloadSubmit = document.getElementById('reload-submit');
+    const reloadCancel = document.getElementById('reload-cancel');
+
+    // Question count elements
+    const questionCountInput = document.getElementById('question-count');
+    const countSlider = document.getElementById('count-slider');
+    const decreaseBtn = document.getElementById('decrease-btn');
+    const increaseBtn = document.getElementById('increase-btn');
+    const countDisplay = document.getElementById('count-display');
+    const timeEstimate = document.getElementById('time-estimate');
+
+    // Quiz variables
+    let TOTAL_QUESTIONS = 10; // Default value
+    let timeRemaining; // Will be set dynamically based on question count
+    let selectedQuestions = [];
+    let currentQuestionIndex = 0;
+    let userAnswers = [];
+    let timer;
+    let quizInProgress = false;
+
+    // Update question count display
+    function updateCountDisplay() {
+      countDisplay.textContent = `${TOTAL_QUESTIONS} questions`;
+      questionCountInput.value = TOTAL_QUESTIONS;
+      countSlider.value = TOTAL_QUESTIONS;
+      // Show estimated time as 45 seconds per question
+      const totalSeconds = TOTAL_QUESTIONS * 45;
+      const min = Math.floor(totalSeconds / 60);
+      const sec = totalSeconds % 60;
+      let timeStr = '';
+      if (min > 0) {
+        timeStr += `${min} minute${min !== 1 ? 's' : ''}`;
+        if (sec > 0) timeStr += ` ${sec} second${sec !== 1 ? 's' : ''}`;
+      } else {
+        timeStr = `${sec} second${sec !== 1 ? 's' : ''}`;
+      }
+      timeEstimate.textContent = `Estimated time: ${timeStr} (${TOTAL_QUESTIONS} × 45 sec)`;
+    }   
+
+    // Initialize question count controls
+    decreaseBtn.addEventListener('click', () => {
+      if (TOTAL_QUESTIONS > 10) {
+        TOTAL_QUESTIONS = Math.max(10, TOTAL_QUESTIONS - 5);
+        updateCountDisplay();
+      }
+    });
+
+    increaseBtn.addEventListener('click', () => {
+      if (TOTAL_QUESTIONS < 100) {
+        TOTAL_QUESTIONS = Math.min(100, TOTAL_QUESTIONS + 5);
+        updateCountDisplay();
+      }
+    });
+
+    questionCountInput.addEventListener('change', () => {
+      let value = parseInt(questionCountInput.value);
+      if (isNaN(value) || value < 10) value = 10;
+      if (value > 100) value = 100;
+      TOTAL_QUESTIONS = value;
+      updateCountDisplay();
+    });
+
+    countSlider.addEventListener('input', () => {
+      TOTAL_QUESTIONS = parseInt(countSlider.value);
+      updateCountDisplay();
+    });
+
+    // Initialize quiz
+    startQuizBtn.addEventListener('click', () => {
+      startScreen.style.display = 'none';
+      app.style.display = 'flex';
+      initQuiz();
+    });
+
+    function initQuiz() {
+      // Set time limit based on number of questions (45s per question)
+      timeRemaining = TOTAL_QUESTIONS * 45;
+      updateTimerDisplay();
+
+      // Shuffle and pick questions
+      const shuffled = shuffleArray([...questions]);
+      selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
+
+      currentQuestionIndex = 0;
+      userAnswers = new Array(selectedQuestions.length).fill(null);
+
       showQuestion();
+
+      prevBtn.disabled = true;
+      nextBtn.disabled = false;
+      submitBtn.disabled = true;
+
+      quizContainer.style.display = 'flex';
+      resultContainer.style.display = 'none';
+
+      startTimer();
+      
+      quizInProgress = true;
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      
+      // Focus on the quiz container for keyboard events
+      document.body.focus();
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function startTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+        if (timeRemaining <= 0) {
+          clearInterval(timer);
+          finishQuiz();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      let min = Math.floor(timeRemaining / 60);
+      let sec = timeRemaining % 60;
+      timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+    }
+
+    function renderQuestionNav() {
+      questionNav.innerHTML = '';
+      selectedQuestions.forEach((_, i) => {
+        const btn = document.createElement('button');
+        btn.textContent = i + 1;
+        if (userAnswers[i] !== null) btn.classList.add('answered');
+        if (i === currentQuestionIndex) btn.classList.add('current');
+        btn.addEventListener('click', () => {
+          currentQuestionIndex = i;
+          showQuestion();
+          renderQuestionNav();
+        });
+        questionNav.appendChild(btn);
+      });
+    }
+
+    function showQuestion() {
+      const q = selectedQuestions[currentQuestionIndex];
+      questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
+      
+      // Render LaTeX in question
+      questionTextEl.innerHTML = renderLatex(q.question);
+
+      optionsContainer.innerHTML = '';
+
+      q.options.forEach((optionText, i) => {
+        const optionDiv = document.createElement('div');
+        optionDiv.className = 'option';
+        
+        const textSpan = document.createElement('span');
+        textSpan.innerHTML = renderLatex(String.fromCharCode(65 + i) + ". " + optionText);
+        optionDiv.appendChild(textSpan);
+        
+        const keyBadge = document.createElement('div');
+        keyBadge.className = 'key-badge';
+        keyBadge.textContent = String.fromCharCode(65 + i);
+        optionDiv.appendChild(keyBadge);
+
+        if(userAnswers[currentQuestionIndex] === i) {
+          optionDiv.classList.add('selected');
+        }
+
+        optionDiv.addEventListener('click', () => {
+          selectOption(i);
+        });
+
+        optionsContainer.appendChild(optionDiv);
+      });
+
+      prevBtn.disabled = currentQuestionIndex === 0;
+      nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
+      submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
+
       renderQuestionNav();
-    });
-    questionNav.appendChild(btn);
-  });
-}
-
-function showQuestion() {
-  const q = selectedQuestions[currentQuestionIndex];
-  questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
-  questionTextEl.textContent = q.question;
-
-  optionsContainer.innerHTML = '';
-
-  q.options.forEach((optionText, i) => {
-    const optionDiv = document.createElement('div');
-    optionDiv.className = 'option';
-    optionDiv.textContent = String.fromCharCode(65 + i) + ". " + optionText;
-    
-    // Add keyboard shortcut badge
-    const keyBadge = document.createElement('div');
-    keyBadge.className = 'key-badge';
-    keyBadge.textContent = String.fromCharCode(65 + i);
-    optionDiv.appendChild(keyBadge);
-
-    if(userAnswers[currentQuestionIndex] === i) {
-      optionDiv.classList.add('selected');
     }
 
-    optionDiv.addEventListener('click', () => {
-      selectOption(i);
+    function selectOption(optionIndex) {
+      userAnswers[currentQuestionIndex] = optionIndex;
+      
+      Array.from(optionsContainer.children).forEach((optEl, idx) => {
+        optEl.classList.toggle('selected', idx === optionIndex);
+      });
+
+      submitBtn.disabled = false;
+      renderQuestionNav();
+    }
+
+    // Navigation buttons
+    prevBtn.addEventListener('click', () => {
+      if(currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion();
+      }
     });
 
-    optionsContainer.appendChild(optionDiv);
-  });
+    nextBtn.addEventListener('click', () => {
+      if(currentQuestionIndex < selectedQuestions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion();
+      }
+    });
 
-  prevBtn.disabled = currentQuestionIndex === 0;
-  nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
-  submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
+    // Submit button shows custom confirmation dialog
+    submitBtn.addEventListener('click', () => {
+      customConfirm.style.display = 'flex';
+    });
 
-  renderQuestionNav();
-}
+    // Confirm dialog buttons
+    confirmYes.addEventListener('click', () => {
+      customConfirm.style.display = 'none';
+      finishQuiz();
+    });
 
-function selectOption(optionIndex) {
-  userAnswers[currentQuestionIndex] = optionIndex;
-  
-  Array.from(optionsContainer.children).forEach((optEl, idx) => {
-    optEl.classList.toggle('selected', idx === optionIndex);
-  });
+    confirmNo.addEventListener('click', () => {
+      customConfirm.style.display = 'none';
+    });
 
-  submitBtn.disabled = false;
-  renderQuestionNav();
-}
-
-// Navigation buttons
-prevBtn.addEventListener('click', () => {
-  if(currentQuestionIndex > 0) {
-    currentQuestionIndex--;
-    showQuestion();
-  }
-});
-
-nextBtn.addEventListener('click', () => {
-  if(currentQuestionIndex < selectedQuestions.length - 1) {
-    currentQuestionIndex++;
-    showQuestion();
-  }
-});
-
-// Submit button shows custom confirmation dialog
-submitBtn.addEventListener('click', () => {
-  customConfirm.style.display = 'flex';
-});
-
-// Confirm dialog buttons
-confirmYes.addEventListener('click', () => {
-  customConfirm.style.display = 'none';
-  finishQuiz();
-});
-
-confirmNo.addEventListener('click', () => {
-  customConfirm.style.display = 'none';
-});
-
-function finishQuiz() {
-  clearInterval(timer);
-  quizContainer.style.display = 'none';
-  resultContainer.style.display = 'flex';
-
-  let correctCount = 0;
-  resultsList.innerHTML = '';
-
-  selectedQuestions.forEach((q, idx) => {
-    const userAnsIndex = userAnswers[idx];
-    const isCorrect = userAnsIndex === q.answer;
-    if (isCorrect) correctCount++;
-
-    const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
-    const correctAnswerText = q.options[q.answer];
-
-    const div = document.createElement('div');
-    div.className = 'result-question';
-    div.innerHTML = `
-      <div><strong>Q${idx + 1}:</strong> ${q.question}</div>
-      <div>Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${userAnswerText}</span></div>
-      ${isCorrect ? '' : `<div>Correct answer: <span class="correct">${correctAnswerText}</span></div>`}
-    `;
-    resultsList.appendChild(div);
-  });
-
-  scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
-  
-  // Add performance comment
-  let comment = "";
-  const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
-  
-  if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
-  else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
-  else comment = "Keep studying! Focus on the topics you missed.";
-  
-  scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
-}
-
-retryBtn.addEventListener('click', () => {
-  initQuiz();
-});
-
-// Dark Mode Toggle
-darkModeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-});
-
-// Keyboard shortcuts
-document.addEventListener('keydown', function(e) {
-  // Ignore if focus is on input elements
-  if (['INPUT', 'TEXTAREA', 'BUTTON'].includes(document.activeElement.tagName)) {
-    return;
-  }
-  
-  const key = e.key.toUpperCase();
-  
-  // Option selection
-  if (key >= 'A' && key <= 'E') {
-    const optionIndex = key.charCodeAt(0) - 65;
-    const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
-    
-    if (optionIndex < currentOptions.length) {
-      selectOption(optionIndex);
+    // Reload confirmation handlers
+    function handleBeforeUnload(e) {
+      if (quizInProgress) {
+        e.preventDefault();
+        e.returnValue = '';
+        reloadConfirm.style.display = 'flex';
+        return '';
+      }
     }
-  }
-  
-  // Navigation
-  switch(key) {
-    case 'P':
-      if (!prevBtn.disabled) prevBtn.click();
-      break;
-    case 'N':
-      if (!nextBtn.disabled) nextBtn.click();
-      break;
-  }
-});
+
+    reloadSubmit.addEventListener('click', () => {
+      reloadConfirm.style.display = 'none';
+      quizInProgress = false;
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+      finishQuiz();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+    });
+
+    reloadCancel.addEventListener('click', () => {
+      reloadConfirm.style.display = 'none';
+    });
+
+    function finishQuiz() {
+      clearInterval(timer);
+      quizContainer.style.display = 'none';
+      resultContainer.style.display = 'flex';
+      
+      quizInProgress = false;
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+
+      let correctCount = 0;
+      resultsList.innerHTML = '';
+
+      selectedQuestions.forEach((q, idx) => {
+        const userAnsIndex = userAnswers[idx];
+        const isCorrect = userAnsIndex === q.answer;
+        if (isCorrect) correctCount++;
+
+        const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
+        const correctAnswerText = q.options[q.answer];
+
+        const div = document.createElement('div');
+        div.className = 'result-question';
+        div.innerHTML = `
+          <div><strong>Q${idx + 1}:</strong> ${renderLatex(q.question)}</div>
+          <div>Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${renderLatex(userAnswerText)}</span></div>
+          ${isCorrect ? '' : `<div>Correct answer: <span class="correct">${renderLatex(correctAnswerText)}</span></div>`}
+        `;
+        resultsList.appendChild(div);
+      });
+
+      scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
+      
+      let comment = "";
+      const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
+      
+      if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
+      else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
+      else comment = "Keep studying! Focus on the topics you missed.";
+      
+      scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
+    }
+
+    retryBtn.addEventListener('click', () => {
+      initQuiz();
+    });
+
+    // Toggle mobile menu
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+
+    // Initialize count display when page loads
+    updateCountDisplay();
+
+    // Keyboard shortcuts - FIXED
+    document.addEventListener('keydown', function(e) {
+      // Don't process keyboard shortcuts if user is typing in an input
+      if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+      
+      const key = e.key.toUpperCase();
+      
+      // Handle keyboard shortcuts based on what's visible on screen
+      if (startScreen.style.display !== 'none') {
+        // Start screen is visible
+        if (key === 'ENTER') {
+          e.preventDefault();
+          startQuizBtn.click();
+        }
+        return;
+      }
+      
+      if (customConfirm.style.display === 'flex') {
+        // Custom confirmation dialog is visible
+        if (key === 'Y' || key === 'ENTER') {
+          e.preventDefault();
+          confirmYes.click();
+        } else if (key === 'N' || key === 'ESCAPE') {
+          e.preventDefault();
+          confirmNo.click();
+        }
+        return;
+      }
+      
+      if (reloadConfirm.style.display === 'flex') {
+        // Reload confirmation dialog is visible
+        if (key === 'ENTER') {
+          e.preventDefault();
+          reloadSubmit.click();
+        } else if (key === 'ESCAPE') {
+          e.preventDefault();
+          reloadCancel.click();
+        }
+        return;
+      }
+      
+      if (resultContainer.style.display === 'flex') {
+        // Results screen is visible
+        if (key === 'ENTER' || key === 'R') {
+          e.preventDefault();
+          retryBtn.click();
+        }
+        return;
+      }
+      
+      if (quizContainer.style.display === 'flex' && quizInProgress) {
+        // Quiz is in progress
+        // Option selection (A–E)
+        if (key >= 'A' && key <= 'E') {
+          const optionIndex = key.charCodeAt(0) - 65;
+          const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
+          if (optionIndex < currentOptions.length) {
+            e.preventDefault();
+            selectOption(optionIndex);
+          }
+          return;
+        }
+
+        // Navigation
+        switch (key) {
+          case 'P':
+            e.preventDefault();
+            if (!prevBtn.disabled) prevBtn.click();
+            break;
+          case 'N':
+            e.preventDefault();
+            if (!nextBtn.disabled) nextBtn.click();
+            break;
+          case 'S':
+            e.preventDefault();
+            if (!submitBtn.disabled) submitBtn.click();
+            break;
+        }
+      }
+    });
+
+    // Simple LaTeX rendering function
+    function renderLatex(text) {
+      // This is a simplified version - in a real app you'd use KaTeX properly
+      return text.replace(/\$(.*?)\$/g, '<span class="katex">$1</span>');
+    }
